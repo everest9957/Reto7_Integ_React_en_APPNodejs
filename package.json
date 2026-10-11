@@ -1,0 +1,23 @@
+{
+  "name": "reto7-integ-react-node",
+  "version": "1.0.0",
+  "description": "Reto 7 - Integración React con API RESTful en Node.js",
+  "main": "index.js",
+  "scripts": {
+    "backend": "node backend/server.js",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "api-rest"
+  ],
+  "author": "Tu nombre",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
